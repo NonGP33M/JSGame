@@ -9,23 +9,23 @@
             let canvas = document.getElementById("paper")
             let ctx = canvas.getContext('2d')
             ctx.fillStyle = 'Black'
-            ctx.fillRect(5, 5, 2.7, 5.9)
-            ctx.fillRect(10, 5, 2.7, 5.9)
+            ctx.fillRect(50, 50, 27, 59)
+            ctx.fillRect(100, 50, 27, 59)
             ctx.beginPath()
-            ctx.arc(10, 12, 5, 0, 1 * Math.PI)
+            ctx.arc(100, 120, 50, 0, 1 * Math.PI)
             ctx.fill()
 
             ctx.fillStyle = 'White'
-            ctx.fillRect(5.1, 5.1, 1.3, 2.7)
-            ctx.fillRect(10.1, 5.1, 1.3, 2.7)
+            ctx.fillRect(51, 51, 13, 27)
+            ctx.fillRect(101, 51, 13, 27)
             ctx.beginPath()
-            ctx.arc(10, 12.1, 2.5, 0, 1 * Math.PI)
+            ctx.arc(100, 121, 25, 0, 1 * Math.PI)
             ctx.fill()
             
             ctx.fillStyle = 'Black'
             ctx.beginPath()
-            ctx.moveTo(10, 12.1)
-            ctx.lineTo(10, 15)
+            ctx.moveTo(100, 121)
+            ctx.lineTo(100, 150)
             ctx.stroke()
         </script>
 </html>
