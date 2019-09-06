@@ -6,8 +6,10 @@
         </canvas>
     </body>
     <script>
+
         let canvas = document.getElementById("paper")
         let ctx = canvas.getContext('2d')
+
         class Sprite {
             constructor(color, x, y, direction, speed){
                 this.color = color
@@ -35,7 +37,9 @@
             new Sprite('#ee7722', 80, 70, -1, 100),
             new Sprite('#00ffff', 300, 90, -1, 150),
         ]
+
         let lastFrameStamp = new Date().getTime()     
+
         function draw(){
             ctx.clearRect(0, 0, canvas.width, canvas.height)
             let now = new Date().getTime()
@@ -46,6 +50,7 @@
             window.requestAnimationFrame(draw)
             lastFrameStamp = now
         }
+        
         window.requestAnimationFrame(draw)
         
     </script>
